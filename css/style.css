@@ -34,6 +34,10 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1166px;
   padding-left: 15px;
@@ -59,6 +63,8 @@ address {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
 }
 
 /* =======HEADER======== */
@@ -68,16 +74,36 @@ address {
   padding-bottom: 28px;
 }
 
+/* .header .container {
+  display: flex;
+} */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
+  margin-right: 100px;
 }
 
 .header-logo-italic {
   font-style: italic;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 24px;
 }
 
 .header-menu-link {
@@ -91,6 +117,15 @@ address {
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #fd9222;
+}
+
+.header-address {
+  margin-left: auto;
+}
+
+.header-address-list {
+  display: flex;
+  gap: 24px;
 }
 
 .header-address-link {
@@ -129,8 +164,15 @@ address {
   } */
 }
 
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .hero-btn {
   background-color: #fd9222;
+  border: none;
+  margin-right: 14px;
   /* &:focus,
   &:hover {
     background-color: #fcf1e0;
@@ -145,6 +187,7 @@ address {
 }
 
 .hero-anchor-link {
+  border: 1px solid #fff;
 }
 
 .hero-scroll-link {
@@ -153,6 +196,7 @@ address {
   line-height: 1.28571;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 
 /** ========FEATURES========= */
@@ -164,10 +208,14 @@ address {
 }
 
 .features-list {
+  display: flex;
+  padding-left: 36px;
+  padding-right: 36px;
+  gap: 70px;
 }
 
-.features-item:not(:first-child) {
-  margin-top: 50px;
+.features-item {
+  width: calc((100% - 70px * 2) / 3);
 }
 
 .features-subtitle {
@@ -208,15 +256,22 @@ address {
 }
 
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 40px 19px; */
+  column-gap: 19px;
+  row-gap: 40px;
 }
 
 .taste-item {
   border: 1px solid #fd9222;
   padding: 28px 32px;
   border-radius: 15px;
+  width: calc((100% - 57px) / 4);
 }
 
 .taste-image {
+  margin-bottom: 36px;
 }
 
 .taste-subtitle {
@@ -293,6 +348,8 @@ address {
 .reviews-btn {
   font-size: 18px;
   color: #111;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer {
