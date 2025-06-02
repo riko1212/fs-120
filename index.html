@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Chocolate</title>
+<<<<<<< Updated upstream
   </head>
   <body>
     <header>
@@ -24,6 +25,102 @@
           <li><a href=""></a></li>
         </ul>
       </address> -->
+=======
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a
+            class="header-logo"
+            href="index.html"
+            ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE</a
+          >
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a
+                class="header-menu-link current"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a
+                class="header-menu-link"
+                href="./about.html"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a
+                class="header-menu-link"
+                href=""
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="header-address-list">
+            <li class="header-address-item">
+              <a
+                class="header-address-link"
+                href=""
+              >
+                <svg
+                  class="header-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-address-item">
+              <a
+                class="header-address-link"
+                href=""
+                ><svg
+                  class="header-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twit"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </address>
+      </div>
+>>>>>>> Stashed changes
     </header>
     <!-- header>nav>a+ul>li*3>a -->
     <main>
@@ -222,5 +319,96 @@
         <li><a href="">Chocolate is loved</a></li>
       </ul>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button
+          type="button"
+          class="modal-close"
+        >
+          <svg
+            class="modal-close-icon"
+            width="28"
+            height="28"
+          >
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="modal-title section-title">
+          LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label
+              for="user-name"
+              class="modal-input-text"
+              >Name</label
+            >
+            <div class="modal-input-cover">
+              <input
+                type="text"
+                class="modal-input modal-item"
+                name="user-name"
+                placeholder="Enter name"
+                required
+                id="user-name"
+              />
+              <svg
+                class="modal-input-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label
+              for="user-email"
+              class="modal-input-text"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="modal-input modal-item"
+              name="user-email"
+              placeholder="Enter email"
+              id="user-email"
+              disabled
+            />
+          </div>
+          <div class="modal-field">
+            <label
+              for="user-phone"
+              class="modal-input-text"
+              >Phone number</label
+            >
+            <input
+              type="tel"
+              class="modal-input modal-item"
+              name="user-phone"
+              placeholder="Enter phone"
+              required
+              id="user-phone"
+            />
+          </div>
+          <div class="modal-field">
+            <label
+              for="user-text"
+              class="modal-input-text"
+              >Comment</label
+            >
+            <textarea
+              class="modal-textarea modal-item"
+              name="user-text"
+              id="user-text"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
