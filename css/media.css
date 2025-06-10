@@ -1,0 +1,157 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .made .container {
+    max-width: 678px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .features-list {
+    gap: 32px;
+  }
+
+  .features-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .features-icon {
+    display: flex;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 22px;
+  }
+
+  .taste {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .taste-title {
+    margin-bottom: 28px;
+    max-width: 411px;
+  }
+
+  .taste-text {
+    margin-bottom: 50px;
+  }
+
+  .taste-list {
+    gap: 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .made {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .made-title {
+    margin-bottom: 50px;
+  }
+
+  .made-subtitle {
+    margin-bottom: 28px;
+    max-width: 350px;
+  }
+
+  .made-text {
+    padding: 32px;
+  }
+
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .reviews-title {
+    margin-bottom: 90px;
+  }
+
+  .reviews-list {
+    gap: 50px 16px;
+    justify-content: center;
+  }
+
+  .reviews-item {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (min-width: 1166px) {
+  .container,
+  .made .container {
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .features-list {
+    padding-left: 36px;
+    padding-right: 36px;
+    gap: 70px;
+  }
+
+  .features-item {
+    width: calc((100% - 70px * 2) / 3);
+    padding-right: unset;
+  }
+
+  .taste {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .taste-list {
+    gap: 40px 19px;
+  }
+
+  .taste-item {
+    width: calc((100% - 57px) / 4);
+  }
+
+  .made {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .made-content {
+    flex-direction: row;
+  }
+
+  .made-item {
+    margin-bottom: 24px;
+  }
+
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .reviews-list {
+    gap: 28px;
+  }
+
+  .reviews-item {
+    width: calc((100% - 56px) / 3);
+  }
+}
