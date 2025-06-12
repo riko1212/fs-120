@@ -18,13 +18,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="./css/media.css"
-    />
+
     <link
       rel="stylesheet"
       href="./css/style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./css/media.css"
     />
 
     <link
@@ -42,7 +44,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a
@@ -104,11 +106,92 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="menu-open-btn"
+        >
+          <svg
+            class="header-icon"
+            width="24"
+            height="24"
+          >
+            <use href="./images/icons.svg#icon-insta"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div>
+          <button
+            type="button"
+            class="menu-close-btn"
+          >
+            <svg
+              class="header-icon"
+              width="24"
+              height="24"
+            >
+              <use href="./images/icons.svg#icon-twit"></use>
+            </svg>
+          </button>
+          <nav class="mob-menu-navigation">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a
+                  class="mob-menu-link current"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a
+                  class="mob-menu-link"
+                  href="./about.html"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a
+                  class="mob-menu-link"
+                  href=""
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="mob-menu-address-list">
+          <li class="mob-menu-address-item">
+            <a
+              class="mob-menu-address-link"
+              href=""
+            >
+              <svg
+                class="mob-menu-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-menu-address-item">
+            <a
+              class="mob-menu-address-link"
+              href=""
+              ><svg
+                class="mob-menu-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-twit"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <!-- header>nav>a+ul>li*3>a -->
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <div class="hero-wrapper">
             <h1 class="hero-title animate__animated animate__bounce">
@@ -135,7 +218,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="features">
         <div class="container">
           <h2 hidden>Features</h2>
@@ -191,6 +274,10 @@
               <div class="taste-cover">
                 <img
                   class="taste-image"
+                  srcset="
+                    ./images/taste-img-1.png    1x,
+                    ./images/taste-img-1-2x.png 2x
+                  "
                   src="./images/taste-img-1.png"
                   width="206"
                   height="160"
@@ -287,13 +374,33 @@
             hOW IT’S <span class="accent">made?</span>
           </h2>
           <div class="made-content">
-            <img
-              class="made-image"
-              src="./images/made-img.jpg"
-              alt="liquid chocolate"
-              width="600"
-              height="400"
-            />
+            <picture>
+              <source
+                srcset="./images/made-img.jpg 1x, ./images/made-img-2x.jpg 2x"
+                media="(min-width: 1166px)"
+              />
+              <source
+                srcset="
+                  ./images/made-img-tab.jpg    1x,
+                  ./images/made-img-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/made-img-mob.jpg    1x,
+                  ./images/made-img-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="made-image"
+                src="./images/made-img.jpg"
+                alt="liquid chocolate"
+                width="614"
+              />
+            </picture>
+
             <div class="made-text">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
